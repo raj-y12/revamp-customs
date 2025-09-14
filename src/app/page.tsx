@@ -8,6 +8,7 @@ import Link from "next/link";
 import { FaInstagram, FaTiktok } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import { Barlow_Condensed } from 'next/font/google';
+import Image from 'next/image';
 
 const barlow = Barlow_Condensed({
   subsets: ['latin'],
@@ -17,7 +18,7 @@ const barlow = Barlow_Condensed({
 
 export default function Home() {
   const [isLoading, setLoading] = useState(true);
-  const [isMobile, setIsMobile] = useState(false);
+  const [_isMobile, setIsMobile] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [openIndexes, setOpenIndexes] = useState<number[]>([]);
 
@@ -149,7 +150,7 @@ export default function Home() {
                   <div className="scrolling-wrapper-flexbox" ref={carouselRef}>
                     {["audi", "bmw", "mercedes", "vw", "audi", "bmw", "mercedes", "vw"].map((brand, i) => (
                       <div key={i} className="product-tile relative flex justify-start " >
-                        <img src={`/${brand}.jpeg`} alt={brand} />
+                        <Image src={`/${brand}.jpeg`} alt={brand} />
                         <div className="absolute z-10 flex flex-col top-10 left-5">
                           <h5 className="text-2xl font-bold mb-4" style={{ color: 'var(--text-inverted)' }}>{brand.toUpperCase()}</h5>
                         </div>
