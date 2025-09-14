@@ -21,7 +21,7 @@ export default function Shop() {
   const [isLoading, setLoading] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
   const [category, setCategory] = useState<string>("All");
-  const [selectedBrand, setSelectedBrand] = useState<string | null>(null);
+  const [_selectedBrand, _setSelectedBrand] = useState<string | null>(null);
   const [cart, setCart] = useState<Product[]>([]);
 
   useEffect(() => {
