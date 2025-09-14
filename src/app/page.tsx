@@ -117,7 +117,7 @@ export default function Home() {
           </section>
 
           {/* Brand Carousel */}
-          <div id="mainpage" className="-mt-10 overflow-hidden z-50 relative rounded-t-[40px] bg-[var(--background)]">
+          <div id="mainpage" className=" -mt-10 overflow-hidden z-50 relative rounded-t-[40px] bg-[var(--background)]">
 
 
             <div className={`${styles.main} w-[85vw] mx-auto mt-25`}>

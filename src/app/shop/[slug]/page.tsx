@@ -7,6 +7,7 @@ import Link from "next/link";
 import styles from "../../page.module.css";
 import { motion, AnimatePresence } from "framer-motion";
 import Loading from "../../loading";
+
 import { FaInstagram, FaTiktok } from "react-icons/fa";
 import { Barlow_Condensed } from "next/font/google";
 import { products } from "../../data/product";
