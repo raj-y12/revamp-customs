@@ -150,7 +150,7 @@ export default function Home() {
                   <div className="scrolling-wrapper-flexbox" ref={carouselRef}>
                     {["audi", "bmw", "mercedes", "vw", "audi", "bmw", "mercedes", "vw"].map((brand, i) => (
                       <div key={i} className="product-tile relative flex justify-start " >
-                        <Image src={`/${brand}.jpeg`} alt={brand} />
+                        <Image src={`/${brand}.jpeg`} alt={brand} width={100} height={100} />
                         <div className="absolute z-10 flex flex-col top-10 left-5">
                           <h5 className="text-2xl font-bold mb-4" style={{ color: 'var(--text-inverted)' }}>{brand.toUpperCase()}</h5>
                         </div>
