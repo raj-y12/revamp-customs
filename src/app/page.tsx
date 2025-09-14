@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from "react";
 import styles from "./page.module.css";
 import Loading from "./loading";
-import "./globals.css";
 import Link from "next/link";
 import { FaInstagram, FaTiktok } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
@@ -66,20 +65,6 @@ export default function Home() {
   const toggleAccordion = (index: number) => {
     setOpenIndexes(prev =>
       prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]
-    );
-  };
-
-  const SlidingBanner = () => {
-    const space = '\u00A0'.repeat(40);
-    const text = `∙${space}Worldwide Services${space}∙${space}Based Dublin, Ireland`;
-    const repeatedText = Array(20).fill(text).join(space);
-    return (
-      <div className="banner-container">
-        <div className="banner-track">
-          <span className="banner-text">{repeatedText}</span>
-          <span className="banner-text">{repeatedText}</span>
-        </div>
-      </div>
     );
   };
 

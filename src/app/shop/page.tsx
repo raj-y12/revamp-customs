@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "../page.module.css";
 import Loading from "../loading";
-import "../globals.css";
 import Link from "next/link";
 import { FaInstagram, FaTiktok } from "react-icons/fa";
 import { Barlow_Condensed } from 'next/font/google';
